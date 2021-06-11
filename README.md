@@ -14,3 +14,4 @@ This repository consists of the code I wrote and the source code that was provid
     
     
 ## Snippet of code and GUI
+<img src="https://media.giphy.com/media/exXiQNYLPjTdyGvw3o/giphy.gif" width= 500/>
