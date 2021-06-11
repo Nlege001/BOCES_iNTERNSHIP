@@ -15,4 +15,4 @@ This repository consists of the code I wrote and the source code that was provid
     
 ## Snippet of code and GUI
 <img src="https://github.com/Nlege001/BOCES_iNTERNSHIP/blob/source-codes/code1.jpg" width= 500/>
-<img src="https://github.com/Nlege001/BOCES_iNTERNSHIP/blob/source-codes/code1.jpg" width= 500/>
+<img src="https://github.com/Nlege001/BOCES_iNTERNSHIP/blob/source-codes/gui.jpg" width= 500/>
