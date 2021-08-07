@@ -16,7 +16,7 @@ This repository consists of the code I wrote and the source code that was provid
 - Sometimes students might graduate and leave, and also in other cases there might be accounts that haven't been used for a while. 
 - These accounts are stored in Organizational Units(OUs). We will provide this program a specific organizational unit, a time frame(so that we can identify accounts that haven't been used for a while as obsolete) and also a log path so that we can store the data.
 - The function showed in the ```code``` section below completed the above described process
-- Once we have done this, we will press the button ```Run```, which will execute the code. Old accounts that haven't been used more 
+- Once we have done this, we will press the button ```Run```, which will execute the code. Old accounts that haven't been inactive will be disabled, and the dsiabled accounts will be stored in a log. 
 
 
 ## Code
