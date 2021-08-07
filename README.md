@@ -11,8 +11,36 @@ This repository consists of the code I wrote and the source code that was provid
 ## Languages used
     - 🔌 Powershell
     - 🐍 Python
+
+## Code and explanation
+
+
+```powershell
+# functions
+Function RequiredFields()
+{
+if(($daysCountBox.Text.Length -ne 0) -and ($ouPathBox.Text.Length -ne 0) -and ($logPathBox.Text.Length -ne 0))
+{
+$createClearButton.Enabled = $true
+$createRunButton.Enabled = $true
+}
+}
+
+Function DisableComputers()
+{
+ $time =(Get-Date).AddDays(-($daysCountBox.Text))
+ $ad = Get-ADComputer -Filter {LastLogonTimeStamp -lt $time} -Searchbase $ouPathBox.Text -Properties *
+ 
+ foreach($c in $ad)
+ {
+   Move-ADObject -Identity $($c.DistinguishedName) -TargetPath $ouPathBox.Text
+   Disable-ADAccount -Identity $($c.sAMccountName)
+   Add-Content $logPathBox.Text -Value *Computer: $($c.Name) was moved and disabled on $(Get-Date -Format "MM/dd/yy")
+ }
+}
+```
+
+
     
-    
-## Snippet of code and GUI
-<img src="https://github.com/Nlege001/BOCES_iNTERNSHIP/blob/source-codes/code1.jpg" width= 500/>
+## Snippet of GUI
 <img src="https://github.com/Nlege001/BOCES_iNTERNSHIP/blob/main/disbalecomputers.jpg" width= 500/>
