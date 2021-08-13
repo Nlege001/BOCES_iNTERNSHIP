@@ -3,6 +3,15 @@
 
 # Software Engineering Internship
 
+## Table of contents
+- [Introduction](#x)
+- [Languages used](#y)
+- [Use case and Story](#z)
+- [Code Snippet](#a)
+- [Snippet of GUI](#b)
+
+
+<div name = 'x'/>
 
 ## Introduction
 
@@ -10,11 +19,13 @@
 
 This repository consists of the code I wrote and the source code that was provided. I was able to create a program that manages and control the accounts of students. Given the right OU (Organizational unit i.e n form of a path) and a log of whhere the data should be stored, the program will disable old accounts(accounts that have been inactive or accounts of students that have graduated) and will store the information and time stap in the log.
 
-
+<div name = 'y'/>
 
 ## Languages used
     - 🔌 Powershell
     - 🐍 Python
+
+<div name = 'z'/>
 
 ## Use cases and story
 - Sometimes students might graduate and leave, and also in other cases there might be accounts that haven't been used for a while. 
@@ -22,6 +33,8 @@ This repository consists of the code I wrote and the source code that was provid
 - The function showed in the ```code``` section below completed the above described process
 - Once we have done this, we will press the button ```Run```, which will execute the code. Old accounts that haven't been inactive will be disabled, and the dsiabled accounts will be stored in a log. 
 
+
+<div name = 'a'/>
 
 ## Code
 
@@ -51,7 +64,7 @@ Function DisableComputers()
 }
 ```
 
-
+<div name = 'b'/>
     
 ## Snippet of GUI
 <img src="https://github.com/Nlege001/BOCES_iNTERNSHIP/blob/main/disbalecomputers.jpg" width= 500/>
